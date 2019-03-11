@@ -3,6 +3,8 @@
     margin: 0 auto;
     padding: 0 0%;
 }
+
+/* ---------- Styling for solution section ---------- */
 .solution {
     // width: 80%;
     margin: 0 auto;
@@ -16,8 +18,14 @@
         h1 {
             margin: 20px 0;
         }
+
+        p {
+            font-size: 1.6rem;
+        } 
     }
 }
+
+/* ---------- Styling for features section ---------- */
 
 .features {
     background-color: @green;
@@ -44,11 +52,13 @@
     }
 }
 
+/* ---------- Styling for customer review section ---------- */
+
 .customer-reviews {
     padding: 40px;
+    padding-top: 150px;
     text-align: center;
-    // display: flex;
-    // align-items: center;
+    height: 500px;
 
     h2 {
         color: @green;
@@ -61,7 +71,7 @@
     }
 
     img {
-        width: 60px;
+        width: 120px;
     }
 
     .about {
@@ -71,5 +81,66 @@
     p {
         font-size: 1.3rem;
         color: black;
+    }
+}
+
+/* ---------- Styling for FAQ section ---------- */
+
+.faqs {
+    text-align: center;
+    background-color: @green;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    h2 {
+        color: @white;
+    }
+
+    .faq-container {
+        width: 80%;
+        display: flex;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    
+        .faq {
+            width: 40%;
+            text-align: left;
+            margin-top: 40px;
+            margin-bottom: 40px;
+    
+        }
+    
+        .question {
+            font-weight: bold;
+            font-style: italic;
+        }
+    }
+}
+
+
+
+/* ---------- Styling for subscribe section ---------- */
+
+.subscribe {
+    text-align: center;
+    height: 300px;
+    align-content: center;
+    padding-top: 100px;
+    
+    .button {
+        width: 400px;
+        height: 70px;
+        background-color: #5C6AC4;
+        border-radius: 5px;
+        text-align: center;
+        margin: 50px auto;
+        padding-top: 20px;
+        
+        p {
+            font-size: 2rem;
+            color: @white;
+            padding-bottom: 0px;
+        }
     }
 }
