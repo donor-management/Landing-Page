@@ -194,6 +194,8 @@ img {
 }
 .navbar nav a {
   cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 @media (max-width: 550px) {
   .navbar {
@@ -589,4 +591,35 @@ footer {
 }
 .footer-content .copyright {
   text-align: center;
+}
+.team {
+  background-color: #F6F6F6;
+  padding-top: 100px;
+}
+.team h2,
+.team h3 {
+  color: black;
+}
+.team h3 {
+  margin: 0 auto 20px 18%;
+}
+.team .team-member {
+  padding: 50px 15% 50px 15%;
+  display: flex;
+  background-color: #F6F6F6;
+}
+.team .team-member h3 {
+  margin-left: 0;
+}
+.team .team-member:hover {
+  background-color: #FFFFFF;
+}
+.team .team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 3%;
+}
+.team .team-member a {
+  text-decoration: none;
 }
