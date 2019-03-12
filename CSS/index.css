@@ -168,7 +168,7 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .container {
     width: 90%;
   }
@@ -187,9 +187,27 @@ img {
   width: 200px;
   justify-content: space-between;
 }
+@media (max-width: 550px) {
+  .navbar nav {
+    margin-bottom: 10px;
+  }
+}
+.navbar nav a {
+  cursor: pointer;
+}
+@media (max-width: 550px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
 .logo {
   width: 150px;
   height: 100%;
+}
+@media (max-width: 550px) {
+  .logo {
+    height: 50%;
+  }
 }
 .logo img {
   width: 100%;
@@ -217,17 +235,117 @@ img {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 20px;
+  padding: 50px 0;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 550px) {
+  .solution .solution-container {
+    text-align: center;
+  }
 }
 .solution .solution-container h1 {
   margin: 20px 0;
 }
 .solution .solution-container p {
   font-size: 1.6rem;
+  color: #777777;
+}
+.solution .solution-container .button {
+  width: 400px;
+  height: 70px;
+  background-color: #5C6AC4;
+  border-radius: 5px;
+  text-align: center;
+  margin: 50px auto;
+  margin-right: 0;
+  padding-top: 20px;
+}
+.solution .solution-container .button p {
+  font-size: 2rem;
+  color: #FFFFFF;
+  padding-bottom: 0px;
+}
+.solution .solution-container .small-image {
+  width: 500px;
+  height: 280px;
+}
+.solution .solution-container .small-image img {
+  width: 100%;
+  height: 100%;
 }
 /* ---------- Styling for features section ---------- */
 .features {
   background-color: #4ACAA8;
   padding: 30px 0;
+}
+.features .feature {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  margin: 30px 0;
+}
+@media (max-width: 550px) {
+  .features .feature {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.features .feature .text {
+  border-bottom: 2px solid #FFFFFF;
+  padding-bottom: 30px;
+}
+.features .feature h3 {
+  color: #FFFFFF;
+}
+.features .feature p {
+  color: #FFFFFF;
+}
+.features .feature img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 0 30px;
+}
+@media (max-width: 550px) {
+  .features .feature img {
+    margin-bottom: 50px;
+  }
+}
+.features .feature-reverse {
+  display: flex;
+  align-items: center;
+  padding: 0 50px;
+  margin: 30px 0;
+}
+@media (max-width: 550px) {
+  .features .feature-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.features .feature-reverse .text {
+  border-bottom: 2px solid #FFFFFF;
+  padding-bottom: 30px;
+}
+.features .feature-reverse h3 {
+  color: #FFFFFF;
+}
+.features .feature-reverse p {
+  color: #FFFFFF;
+}
+.features .feature-reverse img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 0 30px;
+}
+@media (max-width: 550px) {
+  .features .feature-reverse img {
+    margin-bottom: 50px;
+  }
 }
 .features .feature-container {
   width: 80%;
@@ -236,11 +354,21 @@ img {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+@media (max-width: 550px) {
+  .features .feature-container {
+    flex-direction: column;
+  }
+}
 .features .feature-container .track {
   width: 25%;
   text-align: center;
   border-radius: 50%;
   margin: 20px 0;
+}
+@media (max-width: 550px) {
+  .features .feature-container .track {
+    width: 100%;
+  }
 }
 .features .feature-container .track p {
   font-size: 1rem;
@@ -269,7 +397,7 @@ img {
 }
 .customer-reviews p {
   font-size: 1.3rem;
-  color: black;
+  color: #777777;
 }
 /* ---------- Styling for FAQ section ---------- */
 .faqs {
@@ -288,11 +416,25 @@ img {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+@media (max-width: 550px) {
+  .faqs .faq-container {
+    flex-direction: column;
+  }
+}
 .faqs .faq-container .faq {
   width: 40%;
   text-align: left;
   margin-top: 40px;
   margin-bottom: 40px;
+  color: black;
+}
+@media (max-width: 550px) {
+  .faqs .faq-container .faq {
+    width: 100%;
+  }
+}
+.faqs .faq-container .faq p {
+  font-size: 1.3rem;
 }
 .faqs .faq-container .question {
   font-weight: bold;
@@ -324,6 +466,11 @@ footer {
   background-color: #F6F6F6;
   padding: 20px 0;
 }
+@media (max-width: 550px) {
+  footer {
+    margin-top: 50px;
+  }
+}
 .footer-content {
   width: 80%;
   margin: 0 auto;
@@ -334,6 +481,11 @@ footer {
   justify-content: space-evenly;
   margin: 20px auto;
   margin-top: 40px;
+}
+@media (max-width: 550px) {
+  .footer-content .contact {
+    width: 60%;
+  }
 }
 .footer-content .copyright {
   text-align: center;
