@@ -235,12 +235,41 @@ img {
   width: 80%;
   margin: 0 auto;
   margin-bottom: 20px;
+  padding: 50px 0;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .solution .solution-container h1 {
   margin: 20px 0;
 }
 .solution .solution-container p {
   font-size: 1.6rem;
+  color: #777777;
+}
+.solution .solution-container .button {
+  width: 400px;
+  height: 70px;
+  background-color: #5C6AC4;
+  border-radius: 5px;
+  text-align: center;
+  margin: 50px auto;
+  margin-right: 0;
+  padding-top: 20px;
+}
+.solution .solution-container .button p {
+  font-size: 2rem;
+  color: #FFFFFF;
+  padding-bottom: 0px;
+}
+.solution .solution-container .small-image {
+  width: 500px;
+  height: 280px;
+}
+.solution .solution-container .small-image img {
+  width: 100%;
+  height: 100%;
 }
 /* ---------- Styling for features section ---------- */
 .features {
@@ -363,7 +392,7 @@ img {
 }
 .customer-reviews p {
   font-size: 1.3rem;
-  color: black;
+  color: #777777;
 }
 /* ---------- Styling for FAQ section ---------- */
 .faqs {
@@ -392,11 +421,15 @@ img {
   text-align: left;
   margin-top: 40px;
   margin-bottom: 40px;
+  color: black;
 }
 @media (max-width: 550px) {
   .faqs .faq-container .faq {
     width: 100%;
   }
+}
+.faqs .faq-container .faq p {
+  font-size: 1.3rem;
 }
 .faqs .faq-container .question {
   font-weight: bold;
