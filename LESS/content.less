@@ -20,9 +20,9 @@
         align-items: center;
         justify-content: space-between;
 
-        @media @mobile {
+        @media (max-width: 1200px) {
             text-align: center;
-            flex-direction: column;
+            flex-direction: column; 
         }
 
         h1 {
@@ -39,7 +39,7 @@
             margin-left: 0;
             .button(400px, 70px, 20px, auto, #5C6AC4, 5px, @white); 
 
-            @media @mobile {
+            @media (max-width: 1200px) {
                 .button(100%, 50px, 10px, auto, #5C6AC4, 5px, @white); 
                 padding-bottom: 10px;
             }
@@ -54,7 +54,7 @@
         .small-image {
             text-align: right;
 
-            @media (max-width: 550px) {
+            @media (max-width: 1200px) {
                 text-align: center;
             }
 
@@ -180,11 +180,21 @@
 
 /* ---------- Styling for customer review section ---------- */
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
 .customer-reviews {
     padding: 40px;
     padding-top: 150px;
     text-align: center;
-    height: 500px;
+    height: 400px;;
 
     h2 {
         color: @green;
@@ -194,10 +204,18 @@
         width: 40%;
         margin: 0 auto;
         margin-top: 40px;
+        opacity: 1;
+        animation: fadein .5s;
 
         @media @mobile {
             width: 100%;
         }
+    }
+
+    .review-hide {
+        display: none;
+        // animation: fadeout 1s;
+        // transition: display 1s ease-in-out;
     }
 
     img {

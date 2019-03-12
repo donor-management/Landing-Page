@@ -289,7 +289,7 @@ img {
   align-items: center;
   justify-content: space-between;
 }
-@media (max-width: 550px) {
+@media (max-width: 1200px) {
   .solution .solution-container {
     text-align: center;
     flex-direction: column;
@@ -316,7 +316,7 @@ img {
   color: #FFFFFF;
   cursor: pointer;
 }
-@media (max-width: 550px) {
+@media (max-width: 1200px) {
   .solution .solution-container .button {
     width: 100%;
     height: 50px;
@@ -339,7 +339,7 @@ img {
 .solution .solution-container .small-image {
   text-align: right;
 }
-@media (max-width: 550px) {
+@media (max-width: 1200px) {
   .solution .solution-container .small-image {
     text-align: center;
   }
@@ -453,11 +453,27 @@ img {
   margin: 15px 7px;
 }
 /* ---------- Styling for customer review section ---------- */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 .customer-reviews {
   padding: 40px;
   padding-top: 150px;
   text-align: center;
-  height: 500px;
+  height: 400px;
 }
 .customer-reviews h2 {
   color: #4ACAA8;
@@ -466,11 +482,16 @@ img {
   width: 40%;
   margin: 0 auto;
   margin-top: 40px;
+  opacity: 1;
+  animation: fadein 0.5s;
 }
 @media (max-width: 550px) {
   .customer-reviews .review {
     width: 100%;
   }
+}
+.customer-reviews .review-hide {
+  display: none;
 }
 .customer-reviews img {
   width: 120px;
