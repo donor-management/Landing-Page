@@ -3,13 +3,17 @@
     background-color: @navigation-border;
     display: flex;
     justify-content: space-between;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     align-items: center;
+
+    @media @mobile {
+        // flex-direction: column;
+    } 
 
     nav {
         display: flex;
-        width: 200px;
+        width: 120px;
         justify-content: space-between;
 
         @media @mobile {
@@ -23,9 +27,7 @@
         }
     }
 
-    @media @mobile {
-        flex-direction: column;
-    } 
+
 }
 
 .logo {
