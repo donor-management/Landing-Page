@@ -203,13 +203,15 @@ a {
   color: black;
 }
 .logo {
-  width: 150px;
-  height: 100%;
+  width: 70px;
+  height: 70px;
+  color: black;
 }
 @media (max-width: 550px) {
-  .logo {
-    height: 50%;
-  }
+}
+.logo h3 {
+  color: black;
+  padding-bottom: 0;
 }
 .logo img {
   width: 100%;
