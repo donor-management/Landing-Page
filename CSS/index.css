@@ -307,6 +307,7 @@ a {
 .solution .solution-container .button {
   margin: 50px auto;
   margin-left: 0;
+  box-shadow: 5px 10px 8px #888888;
   width: 400px;
   height: 70px;
   padding-top: 20px;
@@ -340,6 +341,9 @@ a {
 }
 .solution .solution-container .small-image {
   text-align: right;
+}
+.solution .solution-container .small-image img {
+  box-shadow: 5px 10px 8px #888888;
 }
 @media (max-width: 1200px) {
   .solution .solution-container .small-image {
@@ -488,6 +492,9 @@ a {
   opacity: 1;
   animation: fadein 0.5s;
 }
+.customer-reviews .review img {
+  box-shadow: 5px 10px 8px #888888;
+}
 @media (max-width: 550px) {
   .customer-reviews .review {
     width: 100%;
@@ -557,6 +564,7 @@ a {
 }
 .subscribe .button {
   margin: 50px auto;
+  box-shadow: 5px 10px 8px #888888;
   width: 400px;
   height: 70px;
   padding-top: 20px;

@@ -37,6 +37,7 @@
         .button {
             margin: 50px auto;
             margin-left: 0;
+            box-shadow: 5px 10px 8px #888888;
             .button(400px, 70px, 20px, auto, #5C6AC4, 5px, @white); 
 
             @media (max-width: 1200px) {
@@ -53,6 +54,10 @@
 
         .small-image {
             text-align: right;
+
+            img {
+                box-shadow: 5px 10px 8px #888888;
+            }
 
             @media (max-width: 1200px) {
                 text-align: center;
@@ -208,6 +213,10 @@
         opacity: 1;
         animation: fadein .5s;
 
+        img {
+            box-shadow: 5px 10px 8px #888888;
+        }
+
         @media @mobile {
             width: 100%;
         }
@@ -293,6 +302,7 @@
     
     .button {
         margin: 50px auto;
+        box-shadow: 5px 10px 8px #888888;
         .button(400px, 70px, 20px, auto, #5C6AC4, 5px, @white); 
 
         @media @mobile {
