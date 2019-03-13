@@ -473,12 +473,13 @@ a {
 }
 .customer-reviews {
   padding: 40px;
-  padding-top: 150px;
+  padding-top: 100px;
   text-align: center;
   height: 400px;
 }
 .customer-reviews h2 {
   color: #4ACAA8;
+  padding-bottom: 30px;
 }
 .customer-reviews .review {
   width: 40%;
@@ -496,7 +497,8 @@ a {
   display: none;
 }
 .customer-reviews img {
-  width: 120px;
+  width: 150px;
+  border-radius: 50%;
 }
 .customer-reviews .about {
   font-size: 1rem;
