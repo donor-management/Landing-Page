@@ -2,12 +2,20 @@
     background-color: #F6F6F6;
     padding-top: 100px;
 
+    @media @mobile {
+        text-align: center;
+    }
+
     h2, h3 {
         color: black;
     }
 
     h3 {
         margin: 0 auto 20px 18%;
+
+        @media @mobile {
+            margin: auto;
+        }
     }
 
     .team-member {
@@ -15,8 +23,16 @@
         display: flex;
         background-color: #F6F6F6;
 
+        @media @mobile {
+            flex-direction: column;
+        }
+
         h3 {
             margin-left: 0;
+
+            @media @mobile {
+                margin-bottom: 20px;
+            }
         }
 
         &:hover {
@@ -28,6 +44,16 @@
             height: 200px;
             border-radius: 50%;
             margin-right: 3%;
+
+            @media @mobile {
+                margin: 30px auto;
+            }
+        }
+
+        p {
+            @media @mobile {
+                margin-bottom: 20px;
+            }
         }
 
         a {

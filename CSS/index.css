@@ -173,18 +173,23 @@ img {
     width: 90%;
   }
 }
+a {
+  text-decoration: none;
+}
 .navbar {
   height: 70px;
   background-color: #4ACAA8;
   display: flex;
   justify-content: space-between;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
   align-items: center;
+}
+@media (max-width: 550px) {
 }
 .navbar nav {
   display: flex;
-  width: 200px;
+  width: 120px;
   justify-content: space-between;
 }
 @media (max-width: 550px) {
@@ -196,11 +201,6 @@ img {
   cursor: pointer;
   text-decoration: none;
   color: black;
-}
-@media (max-width: 550px) {
-  .navbar {
-    flex-direction: column;
-  }
 }
 .logo {
   width: 150px;
@@ -289,7 +289,7 @@ img {
   align-items: center;
   justify-content: space-between;
 }
-@media (max-width: 550px) {
+@media (max-width: 1200px) {
   .solution .solution-container {
     text-align: center;
     flex-direction: column;
@@ -316,7 +316,7 @@ img {
   color: #FFFFFF;
   cursor: pointer;
 }
-@media (max-width: 550px) {
+@media (max-width: 1200px) {
   .solution .solution-container .button {
     width: 100%;
     height: 50px;
@@ -339,7 +339,7 @@ img {
 .solution .solution-container .small-image {
   text-align: right;
 }
-@media (max-width: 550px) {
+@media (max-width: 1200px) {
   .solution .solution-container .small-image {
     text-align: center;
   }
@@ -453,11 +453,27 @@ img {
   margin: 15px 7px;
 }
 /* ---------- Styling for customer review section ---------- */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 .customer-reviews {
   padding: 40px;
   padding-top: 150px;
   text-align: center;
-  height: 500px;
+  height: 400px;
 }
 .customer-reviews h2 {
   color: #4ACAA8;
@@ -466,11 +482,16 @@ img {
   width: 40%;
   margin: 0 auto;
   margin-top: 40px;
+  opacity: 1;
+  animation: fadein 0.5s;
 }
 @media (max-width: 550px) {
   .customer-reviews .review {
     width: 100%;
   }
+}
+.customer-reviews .review-hide {
+  display: none;
 }
 .customer-reviews img {
   width: 120px;
@@ -564,9 +585,10 @@ img {
   padding-bottom: 0px;
 }
 footer {
-  height: 150px;
+  height: 70px;
   background-color: #F6F6F6;
   padding: 20px 0;
+  padding-top: 40px;
 }
 @media (max-width: 550px) {
   footer {
@@ -596,6 +618,11 @@ footer {
   background-color: #F6F6F6;
   padding-top: 100px;
 }
+@media (max-width: 550px) {
+  .team {
+    text-align: center;
+  }
+}
 .team h2,
 .team h3 {
   color: black;
@@ -603,13 +630,28 @@ footer {
 .team h3 {
   margin: 0 auto 20px 18%;
 }
+@media (max-width: 550px) {
+  .team h3 {
+    margin: auto;
+  }
+}
 .team .team-member {
   padding: 50px 15% 50px 15%;
   display: flex;
   background-color: #F6F6F6;
 }
+@media (max-width: 550px) {
+  .team .team-member {
+    flex-direction: column;
+  }
+}
 .team .team-member h3 {
   margin-left: 0;
+}
+@media (max-width: 550px) {
+  .team .team-member h3 {
+    margin-bottom: 20px;
+  }
 }
 .team .team-member:hover {
   background-color: #FFFFFF;
@@ -619,6 +661,16 @@ footer {
   height: 200px;
   border-radius: 50%;
   margin-right: 3%;
+}
+@media (max-width: 550px) {
+  .team .team-member img {
+    margin: 30px auto;
+  }
+}
+@media (max-width: 550px) {
+  .team .team-member p {
+    margin-bottom: 20px;
+  }
 }
 .team .team-member a {
   text-decoration: none;
