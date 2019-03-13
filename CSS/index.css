@@ -184,6 +184,7 @@ a {
   padding-left: 5%;
   padding-right: 5%;
   align-items: center;
+  z-index: 100;
 }
 @media (max-width: 550px) {
 }
@@ -217,19 +218,21 @@ a {
   width: 100%;
   height: 100%;
 }
-.carousel {
+.img-container {
   width: 100%;
   height: 600px;
+  overflow: hidden;
 }
-.carousel img {
+.img-container img {
   width: 100%;
   height: 100%;
-  filter: blur(2px);
+  filter: blur(4px);
+  transform: scale(1.01);
 }
-.carousel .img-text {
+.img-container .img-text {
   color: #FFFFFF;
   position: absolute;
-  width: 380px;
+  width: 400px;
   background-color: black;
   background: rgba(52, 27, 43, 0.5);
   top: 55%;
@@ -240,22 +243,19 @@ a {
   text-align: center;
 }
 @media (max-width: 550px) {
-  .carousel .img-text {
-    display: none;
-  }
 }
-.carousel .img-text h2 {
+.img-container .img-text h2 {
   color: #FFFFFF;
   border-top: 2px solid #FFFFFF;
   border-bottom: 2px solid #FFFFFF;
-  width: 250px;
-  margin: 10px auto;
+  width: 300px;
+  margin: 20px auto;
 }
-.carousel .img-text p {
+.img-container .img-text p {
   width: 250px;
   margin: auto;
 }
-.carousel .img-text .button {
+.img-container .img-text .button {
   margin: 10px auto;
   width: 60%;
   height: 40px;
@@ -269,7 +269,7 @@ a {
   cursor: pointer;
   border: 2px solid #FFFFFF;
 }
-.carousel .img-text .button p {
+.img-container .img-text .button p {
   width: 100%;
 }
 .main-content {
