@@ -297,23 +297,28 @@
 .subscribe {
     text-align: center;
     height: 300px;
-    align-content: center;
+    // align-content: center;
     padding-top: 100px;
     
-    .button {
-        margin: 50px auto;
-        box-shadow: 5px 10px 8px #888888;
-        .button(400px, 70px, 20px, auto, #5C6AC4, 5px, @white); 
+    .button-container {
+        margin: 0 auto;
+        width: 400px;
 
-        @media @mobile {
-            .button(100%, 50px, 10px, auto, #5C6AC4, 5px, @white); 
-            padding-bottom: 10px;
-        }
-        
-        p {
-            font-size: 2rem;
-            color: @white;
-            padding-bottom: 0px;
-        }
+        .button {
+            margin: 50px 0;
+            box-shadow: 5px 10px 8px #888888;
+            .button(400px, 70px, 20px, auto, #5C6AC4, 5px, @white); 
+    
+            @media @mobile {
+                .button(100%, 50px, 10px, auto, #5C6AC4, 5px, @white); 
+                padding-bottom: 10px;
+            }
+            
+            p {
+                font-size: 2rem;
+                color: @white;
+                padding-bottom: 0px;
+            }
+        }    
     }
 }
