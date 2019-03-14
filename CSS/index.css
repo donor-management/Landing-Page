@@ -396,6 +396,7 @@ a {
   height: 250px;
   border-radius: 50%;
   margin: 0 30px;
+  filter: grayscale(100%);
 }
 @media (max-width: 650px) {
   .features .feature img {
@@ -430,6 +431,7 @@ a {
   height: 250px;
   border-radius: 50%;
   margin: 0 30px;
+  filter: grayscale(100%);
 }
 @media (max-width: 650px) {
   .features .feature-reverse img {
@@ -691,6 +693,7 @@ footer {
   height: 200px;
   border-radius: 50%;
   margin-right: 3%;
+  box-shadow: 5px 10px 8px #888888;
 }
 @media (max-width: 650px) {
   .team .team-member img {
