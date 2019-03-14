@@ -2,19 +2,13 @@
     background-color: #F6F6F6;
     padding-top: 100px;
 
-    @media @mobile {
-        text-align: center;
-    }
-
-    h2, h3 {
-        color: black;
-    }
-
     h3 {
         margin: 0 auto 20px 18%;
+        color: black;
 
-        @media @mobile {
+        @media @tablet {
             margin: auto;
+            text-align: center;
         }
     }
 
@@ -23,14 +17,14 @@
         display: flex;
         background-color: #F6F6F6;
 
-        @media @mobile {
+        @media @tablet {
             flex-direction: column;
         }
 
         h3 {
             margin-left: 0;
 
-            @media @mobile {
+            @media @tablet {
                 margin-bottom: 20px;
             }
         }
@@ -44,16 +38,15 @@
             height: 200px;
             border-radius: 50%;
             margin-right: 3%;
-            // filter: grayscale(100%);
             box-shadow: 5px 10px 8px #888888;
 
-            @media @mobile {
+            @media @tablet {
                 margin: 30px auto;
             }
         }
 
         p {
-            @media @mobile {
+            @media @tablet {
                 margin-bottom: 20px;
             }
         }
