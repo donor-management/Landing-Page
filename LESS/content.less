@@ -17,9 +17,7 @@
         margin: 0 auto;
         margin-bottom: 20px;
         padding: 50px 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        .display(flex, row, space-between, center, nowrap);
 
         @media (max-width: 1200px) {
             text-align: center;
@@ -88,13 +86,7 @@
     .feature-container {
         width: 80%;
         margin: 0 auto;
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-
-        @media @mobile {
-            // flex-direction: column;
-        } 
+        .display(flex, row, space-evenly, center, wrap);
     }
 
     .feature {
@@ -192,8 +184,6 @@
 }
 
 .customer-reviews {
-    // padding-bottom: 80px;
-    // padding-top: 100px;
     padding: 100px 10px 80px 10px;
     text-align: center;
     height: 420px;
