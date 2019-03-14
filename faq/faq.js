@@ -15,21 +15,13 @@ class Panel {
         this.panelBtnClose.classList.toggle('hide-btn');
 
         if (this.panelBtnOpen.className.includes('hide-btn')) {
-            // if(window.innerHeight > 850) {
-                this.panelContent.style.height = "70px";
-                this.panelContent.style.marginTop = "20px";
-            // } else if (window.innerWidth < 849 && window.innerWidth > 599) {
-            //     this.panelContent.style.height = "120px";
-            //     this.panelContent.style.marginTop = "20px";
-            // } else if (window.innerWidth < 600) {
-            // this.panelContent.style.height = "150px";
-            // this.panelContent.style.marginTop = "20px";
-            // }
+            this.panelContent.style.height = this.panelContent.scrollHeight + "px";
+            this.panelContent.style.marginTop = "20px";
+
         } else {
             this.panelContent.style.height = "0px";
             this.panelContent.style.marginTop = "0px";
         }
-        console.log(window.innerWidth);
     }
 }
   
