@@ -23,7 +23,7 @@ class Reviews {
     }
 
     slide() {
-        if(this.currentIndex === 3) {
+        if(this.currentIndex === this.elements.length - 1) {
             this.elements[this.currentIndex].classList.add('review-hide');
             this.elements[this.currentIndex].classList.remove('review');
             this.currentIndex = 0
