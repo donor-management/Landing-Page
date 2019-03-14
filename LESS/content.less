@@ -7,7 +7,6 @@
 
 /* ---------- Styling for solution section ---------- */
 .solution {
-    // width: 80%;
     margin: 0 auto;
     padding: 20px 0;
 
@@ -93,6 +92,7 @@
         @media (max-width: 750px) {
             display: flex;
             flex-direction: column;
+            padding: 0 20px;
         }
 
         .text {
@@ -112,12 +112,15 @@
             width: 250px;
             height: 250px;
             border-radius: 50%;
+            object-fit: cover;
             margin: 0 30px;
             filter: grayscale(100%);
 
             @media @mobile {
                 margin-bottom: 50px;
-                height: 200px;
+                margin-right: auto;
+                margin-left: auto;
+                height: 250px;
             }
         }
     }
@@ -131,6 +134,7 @@
         @media (max-width: 750px) {
             display: flex;
             flex-direction: column-reverse;
+            padding: 0 20px;
         }
 
         .text {
@@ -154,7 +158,7 @@
 
             @media @mobile {
                 margin-bottom: 50px;
-                height: 200px;
+                height: 250px;
             }
         }
     }
@@ -230,8 +234,6 @@
 
     .review-hide {
         display: none;
-        // animation: fadeout 1s;
-        // transition: display 1s ease-in-out;
     }
 
     img {
@@ -252,60 +254,13 @@
 }
 
 
-/* ---------- Styling for FAQ section ---------- */
-
-.faqs {
-    text-align: center;
-    background-color: @green;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-    h2 {
-        color: @white;
-    }
-
-    .faq-container {
-        width: 80%;
-        display: flex;
-        margin: 0 auto;
-        flex-wrap: wrap;
-        justify-content: space-around;
-
-        @media @mobile {
-            flex-direction: column;
-        } 
-    
-        .faq {
-            width: 40%;
-            text-align: left;
-            margin-top: 40px;
-            margin-bottom: 40px;
-            color: black;
-
-            @media @mobile {
-                width: 100%;
-            } 
-
-            p {
-                font-size: 1.3rem;
-            }
-    
-        }
-    
-        .question {
-            font-weight: bold;
-            font-style: italic;
-        }
-    }
-}
-
-
 /* ---------- Styling for subscribe section ---------- */
 
 .subscribe {
     text-align: center;
     height: 300px;
     padding-top: 100px;
+    background-color: #F6F6F6;
     
     .button-container {
         margin: 0 auto;
