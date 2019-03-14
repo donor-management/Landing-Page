@@ -37,6 +37,7 @@
         .button {
             margin: 50px auto;
             margin-left: 0;
+            box-shadow: 5px 10px 8px #888888;
             .button(400px, 70px, 20px, auto, #5C6AC4, 5px, @white); 
 
             @media (max-width: 1200px) {
@@ -53,6 +54,11 @@
 
         .small-image {
             text-align: right;
+
+            img {
+                box-shadow: 5px 10px 8px #888888;
+                border-radius: 5px;
+            }
 
             @media (max-width: 1200px) {
                 text-align: center;
@@ -84,7 +90,7 @@
         padding: 0 50px;
         margin: 30px 0;
 
-        @media @mobile {
+        @media (max-width: 750px) {
             display: flex;
             flex-direction: column;
         }
@@ -93,6 +99,7 @@
             border-bottom: 2px solid @white;
             padding-bottom: 30px;
         }
+        
         h3 {
             color: @white;
         }
@@ -106,9 +113,11 @@
             height: 250px;
             border-radius: 50%;
             margin: 0 30px;
+            filter: grayscale(100%);
 
             @media @mobile {
                 margin-bottom: 50px;
+                height: 200px;
             }
         }
     }
@@ -119,7 +128,7 @@
         padding: 0 50px;
         margin: 30px 0;
 
-        @media @mobile {
+        @media (max-width: 750px) {
             display: flex;
             flex-direction: column-reverse;
         }
@@ -141,9 +150,11 @@
             height: 250px;
             border-radius: 50%;
             margin: 0 30px;
+            filter: grayscale(100%);
 
             @media @mobile {
                 margin-bottom: 50px;
+                height: 200px;
             }
         }
     }
@@ -191,13 +202,18 @@
 }
 
 .customer-reviews {
-    padding: 40px;
-    padding-top: 150px;
+    padding-bottom: 80px;
+    padding-top: 100px;
     text-align: center;
-    height: 400px;;
+    height: 420px;
+
+    @media (max-width: 600px) {
+        height: 550px;
+    }
 
     h2 {
         color: @green;
+        padding-bottom: 30px;
     }
 
     .review {
@@ -219,7 +235,10 @@
     }
 
     img {
-        width: 120px;
+        width: 150px;
+        border-radius: 50%;
+        box-shadow: 5px 10px 8px #888888;
+        margin-bottom: 10px;
     }
 
     .about {
@@ -286,22 +305,31 @@
 .subscribe {
     text-align: center;
     height: 300px;
-    align-content: center;
     padding-top: 100px;
     
-    .button {
-        margin: 50px auto;
-        .button(400px, 70px, 20px, auto, #5C6AC4, 5px, @white); 
+    .button-container {
+        margin: 0 auto;
+        width: 400px;
 
         @media @mobile {
-            .button(100%, 50px, 10px, auto, #5C6AC4, 5px, @white); 
-            padding-bottom: 10px;
+            width: 100%;
         }
-        
-        p {
-            font-size: 2rem;
-            color: @white;
-            padding-bottom: 0px;
-        }
+
+        .button {
+            margin: 50px 0;
+            box-shadow: 5px 10px 8px #888888;
+            .button(400px, 70px, 20px, auto, #5C6AC4, 5px, @white); 
+    
+            @media @mobile {
+                .button(100%, 50px, 10px, auto, #5C6AC4, 5px, @white); 
+                padding-bottom: 10px;
+            }
+            
+            p {
+                font-size: 2rem;
+                color: @white;
+                padding-bottom: 0px;
+            }
+        }    
     }
 }
